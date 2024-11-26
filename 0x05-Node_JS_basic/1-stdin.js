@@ -5,6 +5,6 @@ process.stdin.on('readable', () => {
     process.stdout.write(`Your name is: ${input}`);
   }
 });
-process.stdin.on('end', function() {
-    process.stdout.write('This important software is now closing\n');
-  });
+process.stdin.on('end', () => {
+  process.stdout.write('This important software is now closing\n');
+});
